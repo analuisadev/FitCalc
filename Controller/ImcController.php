@@ -33,4 +33,8 @@ class ImcController
     public function saveIMC(float $weight, float $height, float $IMCresult, int $id_user): bool {
         return $this->imcService->saveIMC($weight, $height, $IMCresult, $id_user);
     }
+
+    public function deleteImc(int $id) {
+        return $this->imcService->deleteImc($id);
+    }
 }
