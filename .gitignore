@@ -1,3 +1,2 @@
 vendor/
 storage/uploads/images/*
-!storage/uploads/images/.gitkeep
