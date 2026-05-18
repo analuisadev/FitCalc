@@ -1,0 +1,32 @@
+{
+    "name": "ana/fit-calc",
+    "description": "BMI Calculator",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ana\\FitCalc\\": "FitCalc/",
+            "Controller\\": "Controller/",
+            "Model\\": "Model/",
+            "Validator\\": "Validator/",
+            "Service\\": "Service/",
+            "Helper\\": "Helper/"
+        },
+         "files": [
+            "Config/configuration.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "analuisadev",
+            "email": "contato.analuisadev@gmail.com",
+            "homepage": "https://analuisadev.netlify.app/",
+            "role": "Software Engineer and IT Educator"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php" : ">= 8.4",
+        "ext-mbstring": "*"
+    }
+}
