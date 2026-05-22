@@ -49,7 +49,7 @@ class ImcService
     {
         $imcHistory = $this->imcModel->showIMCHistory($id_user);
 
-        if (count($imcHistory) < 2) {
+        if (\count($imcHistory) < 2) {
             return [
                 "message" => "Não há IMCs suficientes para calcular a variação.",
                 'imcHistory' => []

@@ -18,7 +18,7 @@ class FileHelper
         $mime = $finfo->file($profilePhoto['tmp_name']);
         $allowed = ['image/jpeg' => 'jpg', 'image/png' => 'png'];
 
-        if (!array_key_exists($mime, $allowed))
+        if (!\array_key_exists($mime, $allowed))
             return false;
 
         if (!getimagesize($profilePhoto['tmp_name']))
